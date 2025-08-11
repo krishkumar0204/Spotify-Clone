@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Assests/logo.png" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="Assests/library_icon.png" />
+              <a href="#">Your library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-boxes">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy, we'll help you</p>
+              <button class="badge">Create Playlist</button>
+            </div>
+            <div class="box box-2">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated on new episodes</p>
+              <button class="badge">Browse Podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="Assests/backward_icon.png" />
+            <img src="Assests/forward_icon.png" class="hide" />
+          </div>
+
+          <div class="sticky-nav-option">
+            <button class="badge nav-item hide">
+              <i class="fa-brands fa-web-awesome Premium"></i>Explore Premium
+            </button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right: 8px"></i
+              >Install App
+            </button>
+            <i class="fa-solid fa-user nav-item nav-items"></i>
+            <i class="fa-solid fa-bell nav-item nav-items"></i>
+            <i class="fa-solid fa-user-group nav-item nav-items"></i>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Assests/Recently played 2.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Trending Valentine's Hits...</p>
+          </div>
+
+          <div class="card">
+            <img src="Assests/Recently played 3.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Aashiqui 2</p>
+          </div>
+
+          <div class="card">
+            <img src="Assests/Recently played4.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Raanjhan (from "Do patti")</p>
+          </div>
+          <div class="card">
+            <img src="Assests/Recently played 5.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Ultimate - Love Songs...</p>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Assests/card2img.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Top 50 - Romantic</p>
+            <p class="card-info">Your daily updates of Hindi Romantic...</p>
+          </div>
+
+          <div class="card">
+            <img src="Assests/card3img.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Top 50 - Rahet fateh ali khan</p>
+            <p class="card-info">
+              Your daily updates of Rahet fateh ali khan...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="Assests/card4img.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Top 50 - Thalapati Vijay</p>
+            <p class="card-info">Your daily updates of South Music...</p>
+          </div>
+        </div>
+
+        <h2>Popular Artists</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Popularites/A.R raheman.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">A.R Raheman</p>
+          </div>
+
+          <div class="card">
+            <img src="Popularites/Arjit singh.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Arjit Singh</p>
+          </div>
+
+          <div class="card">
+            <img src="Popularites/Honeysingh.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Honey Singh</p>
+          </div>
+
+          <div class="card">
+            <img src="Popularites/shreya ghosal.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Shreya Ghosal</p>
+          </div>
+
+          <div class="card">
+            <img src="Popularites/Shubh.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Shubh</p>
+          </div>
+
+          <div class="card">
+            <img src="Popularites/udit narayan.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Udit Narayan</p>
+          </div>
+        </div>
+
+        <h2>Rain&Pain</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Rain & pain/90's sad bollywood.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">90s Sad Bllywood</p>
+          </div>
+
+          <div class="card">
+            <img src="Rain & pain/I-pop sad feels.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">I-POP Sad Feels</p>
+          </div>
+
+          <div class="card">
+            <img src="Rain & pain/Sad Haryanvi hits.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Sad Haryanvi Hits</p>
+          </div>
+          <div class="card">
+            <img src="Rain & pain/Sad hindi melodies.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Sad Hindi Melodies</p>
+          </div>
+          <div class="card">
+            <img src="Rain & pain/Sad Tamil melodies.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Sad Tamil Melodies</p>
+          </div>
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Assests/card5img.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most Global...</p>
+          </div>
+
+          <div class="card">
+            <img src="Assests/card6img.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Top Songs - India</p>
+            <p class="card-info">Your daily updates of the most India...</p>
+          </div>
+
+          <div class="card">
+            <img src="Assests/card1img.jpeg" class="card-image" />
+            <button class="play"><i class="fa-solid fa-play"></i></button>
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer">
+          <div class="Company">
+            <h2>Company</h2>
+            <p>About</p>
+            <p>Jobs</p>
+            <p>For the Record</p>
+          </div>
+          <div class="Communities">
+            <h2>Communities</h2>
+            <p>For Artists</p>
+            <p>Developers</p>
+            <p>Advertising</p>
+            <p>Investors</p>
+            <p>Vendors</p>
+          </div>
+          <div class="Useful-links">
+            <h2>Useful Links</h2>
+            <p>Support</p>
+            <p>Free Mobile App</p>
+            <p>Popular By Country</p>
+          </div>
+          <div class="Spotify-plans">
+            <h2>Spotify Plans</h2>
+            <p>Premium Individual</p>
+            <p>Premium Duo</p>
+            <p>Premium Family</p>
+            <p>Premium Student</p>
+            <p>Spotify Free</p>
+          </div>
+          <div class="social">
+            <div class="social-1"><i class="fa-brands fa-instagram"></i></div>
+            <div class="social-2"><i class="fa-brands fa-twitter"></i></div>
+            <div class="social-3"><i class="fa-brands fa-facebook"></i></div>
+          </div>
+        </div>
+        <div class="line-2"></div>
+        <p class="copy">&copy;2025 Spotify</p>
+      </div>
+
+      <div class="music-player">
+        <div class="album">
+          <img src="Assests/Song.jpeg" />
+          <div class="song-info">
+            <p>Saiyaara (from "Saiyaara")</p>
+            <p>Tanishk bagchi, Faheem Abdullah</p>
+          </div>
+          <div class="song-icons">
+            <i class="fa-regular fa-heart"></i>
+            <img src="Assests/picture-n-picture.png" />
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-control">
+            <img src="Assests/player_icon1.png" class="player-control-icon" />
+            <img src="Assests/player_icon2.png" class="player-control-icon" />
+            <img
+              src="Assests/player_icon3.png"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="Assests/player_icon4.png" class="player-control-icon" />
+            <img src="Assests/player_icon5.png" class="player-control-icon" />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              class="progress-bar"
+            />
+            <span class="total-time">3:30</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="controls-icon">
+            <img src="Assests/play-circle.png" />
+            <img src="Assests/mic.png" />
+            <img src="Assests/lyrics.png" />
+            <img src="Assests/music-queue.png" />
+            <input type="range" min="0" max="100" />
+            <img src="Assests/picture-n-picture.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
