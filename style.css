@@ -396,3 +396,149 @@ a {
   border-radius: 50%;
   margin-top: -6px;
 }
+
+/* ...existing code... */
+
+/* Tablet Devices (max-width: 900px) */
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  .main-content {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding: 0 0.5rem;
+  }
+  .cards-container {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .card {
+    margin-left: 0.5rem;
+    width: 45vw;
+    min-width: 140px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: auto;
+  }
+}
+
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+    overflow: auto;
+  }
+  .main {
+    flex-direction: column;
+    padding: 0.25rem;
+    height: auto;
+  }
+  .sidebar {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+  }
+  .main-content {
+    padding: 0 0.25rem;
+    margin-bottom: 3.5rem;
+    border-radius: 0.5rem;
+  }
+  .nav {
+    height: auto;
+    padding: 0.25rem 0.5rem;
+  }
+  .library {
+    padding: 0.25rem 0.5rem;
+  }
+  .card {
+    width: 90vw;
+    min-width: 120px;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .play {
+    left: 70vw;
+    top: 60vw;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+    height: auto;
+  }
+  .music-player {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 0;
+  }
+  .album,
+  .player,
+  .controls {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    justify-content: flex-start;
+  }
+  .song-info p {
+    font-size: 0.7rem;
+  }
+  .controls-icon img,
+  .song-icons img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .progress-bar {
+    width: 90%;
+  }
+}
+
+/* Extra Small Devices (max-width: 400px) */
+@media (max-width: 400px) {
+  .card {
+    width: 98vw;
+    min-width: 80px;
+    padding: 0.25rem;
+  }
+  .main-content {
+    padding: 0 0.1rem;
+  }
+  .footer {
+    padding: 0.25rem;
+  }
+  .music-player {
+    padding: 0.25rem 0;
+  }
+  .album img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .song-info p {
+    font-size: 0.6rem;
+  }
+}
+
+/* Hide sidebar on very small screens */
+@media (max-width: 350px) {
+  .sidebar {
+    display: none;
+  }
+}
