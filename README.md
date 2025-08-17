@@ -25,7 +25,7 @@
 
 ## 📷 Screenshot
 
-![image alt](https://github.com/krishkumar0204/Spotify-Clone/blob/6e91c217da63734c02392a531fe93dea65917126/Spotify%20Clone.png)
+![Spotify Clone](https://github.com/krishkumar0204/Spotify-Clone/blob/6e91c217da63734c02392a531fe93dea65917126/Spotify%20Clone.png)
 
 **Want to contribute?** Open a PR or drop a suggestion! 💡  
 
